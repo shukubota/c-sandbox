@@ -14,11 +14,11 @@ int main(int argc, char **argv)
   
 //   fd = open(argv[1], O_RDONLY);
   fd = open("test.txt", O_RDONLY);
-  read(fd, buf, 3);
-  write(STDOUT_FILENO, buf, 3);
-  write(STDOUT_FILENO, "\n", 1);
+//   read(fd, buf, 3);
+//   write(STDOUT_FILENO, buf, 3);
+//   write(STDOUT_FILENO, "\n", 1);
   
-  lseek(fd, 1, SEEK_SET);
+  lseek(fd, 2, SEEK_SET);
   read(fd, buf, 3);
   write(STDOUT_FILENO, buf, 3);
   write(STDOUT_FILENO, "\n", 1);
