@@ -22,6 +22,8 @@ int main(int argc, char **argv)
   read(fd, buf, 3);
   write(STDOUT_FILENO, buf, 3);
   write(STDOUT_FILENO, "\n", 1);
+
+  close(fd);
   
   return 0;
 }
